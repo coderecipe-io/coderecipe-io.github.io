@@ -1,0 +1,38 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+main {
+    display: grid;
+    height: 100%;
+    grid-gap: 3px;
+    
+    grid-template: 
+    "nav head" min-content
+    "nav main" 1fr
+        / min-content 1fr;
+}
+
+nav {
+    grid-area: nav;
+    overflow: auto;
+    resize: horizontal;
+    
+    min-width: 120px;
+    max-width: 50vw;
+}
+
+header {
+    grid-area: head;
+    overflow: auto;
+    resize: vertical;
+    
+    min-height: min-content;
+    max-height: 200px;
+}
+
+section {
+    grid-area: main;
+}

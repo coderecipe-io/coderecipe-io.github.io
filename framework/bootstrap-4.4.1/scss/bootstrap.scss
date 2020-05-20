@@ -41,4 +41,14 @@
 @import "carousel";
 @import "spinners";
 @import "utilities";
-@import "print";
+// @import "print";
+
+
+
+.container{
+  &.section1{
+    background-image : url("../../../landing/coderecipe/images/top.jpg");
+    background-position: top center;
+    background-size: cover;
+  }
+}

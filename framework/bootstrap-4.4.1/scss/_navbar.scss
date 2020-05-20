@@ -57,6 +57,9 @@
   @include font-size($navbar-brand-font-size);
   line-height: inherit;
   white-space: nowrap;
+  img{
+    height: 50px;
+  }
 
   @include hover-focus() {
     text-decoration: none;

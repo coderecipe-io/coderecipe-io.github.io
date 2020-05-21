@@ -46,6 +46,7 @@ $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 $crcolor: #2667b2 !default;
 $crquick: #844EBE !default;
+$crpay: #ea5b11 !default;
 
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -65,7 +66,8 @@ $colors: map-merge(
     "gray":       $gray-600,
     "gray-dark":  $gray-800,
     "crcolor" : $crcolor,
-    "crquick": $crquick
+    "crquick": $crquick,
+    "crapy" : $crpay
   ),
   $colors
 );
@@ -92,7 +94,8 @@ $theme-colors: map-merge(
     "light":      $light,
     "dark":       $dark,
     "crcolor": $crcolor,
-    "crquick": $crquick
+    "crquick": $crquick,
+    "crpay": $crpay
   ),
   $theme-colors
 );

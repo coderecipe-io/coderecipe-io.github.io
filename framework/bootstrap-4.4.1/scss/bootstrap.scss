@@ -41,14 +41,227 @@
 @import "carousel";
 @import "spinners";
 @import "utilities";
-// @import "print";
+@import "print";
 
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
-.container{
-  &.section1{
-    background-image : url("../../../landing/coderecipe/images/top.jpg");
-    background-position: top center;
-    background-size: cover;
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+html {
+  body {
+    color: #323232;
+    overflow-x: hidden;
   }
+}
+
+.section {
+  min-height: 400px;
+  // max-height: 500px;
+  overflow: hidden;
+  padding: 3rem 0 1rem 0;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  .h2 {
+    padding: 1rem 0 3.5rem 0;
+    font-weight: bold;
+    color: $crcolor;
+  }
+  .h3 {
+    padding: 1rem 0 3.5rem 0;
+    font-weight: bold;
+    // color: $crcolor;
+  }
+}
+
+
+.main {
+  .row {
+    &.section {
+      min-height: 400px;
+      max-height: 500px;
+      overflow: hidden;
+      padding: 3rem 0 1rem 0;
+      font-size: 1.2rem;
+      line-height: 1.8;
+
+      img {
+        position: absolute;
+        display: block;
+        height: 100%;
+        object-fit: cover;
+        box-sizing: border-box;
+      }
+
+      .h2 {
+        padding: 1rem 0 3.5rem 0;
+        font-weight: bold;
+        color: $crcolor;
+      }
+
+      .sub {
+        font-size: 1rem;
+
+        span.subtitle {
+          display: block;
+          font-size: 1.2rem;
+          padding: 0 0 .5rem 0;
+          color: $secondary;
+          font-weight: bold;
+        }
+      }
+
+
+      .border {
+        border: 0 !important;
+
+        &.left {
+          border-left: 4px solid $crcolor !important;
+        }
+
+        &.right {
+          border-right: 4px solid $crcolor !important;
+        }
+      }
+
+    }
+
+
+
+    &.section1 {
+      padding: 0;
+
+      .title {
+        position: absolute;
+        top: 40%;
+        font-size: 3rem;
+      }
+
+      color: #ffffff;
+      text-shadow: 1px 1px #787878;
+
+      img {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        box-sizing: border-box;
+        -webkit-filter: blur(5px) grayscale(30%);
+        filter: blur(5px) grayscale(30%);
+        opacity: .9;
+
+        // background-color: $crcolor;
+      }
+    }
+  }
+}
+
+.member {
+  .card {
+    cursor: pointer;
+
+    .card-body {
+      .card-title {
+        &.name {
+          text-align: center;
+        }
+
+        &.role {
+          text-align: center;
+        }
+
+      }
+
+      .card-text {
+
+        // height: 200px;
+        &.description {
+          // height: 0px;
+          display: none;
+          // z-index: 10;
+        }
+      }
+    }
+
+    &:hover {
+      background-color: $primary;
+      color: white;
+      font-weight: bold;
+      z-index: 10;
+    }
+
+    &:hover .card-text.description {
+      margin-top: -2.5rem;
+      margin-left: -1.3rem;
+
+      @media (max-width: 990px) {
+        width: 100%;
+      }
+
+      @media (min-width: 990px) {
+        // width: calc(100vw / 3);
+        width: inherit;
+      }
+
+      border: 2px solid silver;
+      background-color: white;
+      padding: 1.8rem;
+      color: $secondary;
+      position: fixed;
+      height: 300px;
+      height: inherit;
+      display:block;
+    }
+  }
+}
+
+
+.quick {
+  .btn {
+    &.tech {
+      width: 200px;
+      height: 200px;
+      font-size:1.1rem;
+      padding: .3rem;
+      border-radius: 100%;
+      box-shadow: $box-shadow;
+      &:hover{
+
+      }
+    }
+  }
+
+  // .owl-carousel {
+  //   cursor: pointer;
+
+  //   .owl-item {
+  //     cursor: pointer;
+  //   }
+  // }
+}
+
+
+
+.navbar-collapse {
+
+  position: absolute;
+  right: 20px;
+
+  &.collapse {
+    &.show {
+      position: relative !important;
+      // min-height: 500px;
+
+      .nav-link {
+        text-align: center;
+        padding: 2rem 0;
+      }
+    }
+  }
+
+  .navbar-nav {}
 }

@@ -58,6 +58,8 @@ html {
   }
 }
 
+
+
 .section {
   min-height: 400px;
   // max-height: 500px;
@@ -65,13 +67,15 @@ html {
   padding: 3rem 0 1rem 0;
   font-size: 1.2rem;
   line-height: 1.8;
+
   .h2 {
     padding: 1rem 0 3.5rem 0;
     font-weight: bold;
     color: $crcolor;
   }
+
   .h3 {
-    padding: 1rem 0 3.5rem 0;
+    padding: 1rem 0 2.5rem 0;
     font-weight: bold;
     // color: $crcolor;
   }
@@ -79,6 +83,9 @@ html {
 
 
 .main {
+  .container{
+    max-width: 720px;
+  }
   .row {
     &.section {
       min-height: 400px;
@@ -88,13 +95,7 @@ html {
       font-size: 1.2rem;
       line-height: 1.8;
 
-      img {
-        position: absolute;
-        display: block;
-        height: 100%;
-        object-fit: cover;
-        box-sizing: border-box;
-      }
+
 
       .h2 {
         padding: 1rem 0 3.5rem 0;
@@ -108,7 +109,7 @@ html {
         span.subtitle {
           display: block;
           font-size: 1.2rem;
-          padding: 0 0 .5rem 0;
+          padding: 0 0 0rem 0;
           color: $secondary;
           font-weight: bold;
         }
@@ -157,20 +158,41 @@ html {
         // background-color: $crcolor;
       }
     }
+    &.section2{
+      font-size: 1.1rem;
+
+      img {
+        padding-top: 2rem;
+        position: absolute;
+        display: block;
+        height: 100%;
+        // width: 100%;
+        object-fit: cover;
+        box-sizing: border-box;
+      }
+    }
   }
 }
 
 .member {
+
+  .member-section {
+    padding-bottom: 8rem;
+  }
+
   .card {
     cursor: pointer;
 
     .card-body {
       .card-title {
         &.name {
+          font-weight: bold;
           text-align: center;
         }
 
         &.role {
+          color: $secondary;
+          font-size: 1rem;
           text-align: center;
         }
 
@@ -180,6 +202,13 @@ html {
 
         // height: 200px;
         &.description {
+          .role {
+            display: block;
+            color: $crcolor;
+            font-weight: block;
+            margin-bottom: .3rem;
+          }
+
           // height: 0px;
           display: none;
           // z-index: 10;
@@ -196,7 +225,11 @@ html {
 
     &:hover .card-text.description {
       margin-top: -2.5rem;
-      margin-left: -1.3rem;
+      // margin-left: -1.3rem;
+      font-size: .8rem;
+      min-height: 150px;
+      line-height: 1.6;
+      min-width: 400px;
 
       @media (max-width: 990px) {
         width: 100%;
@@ -207,11 +240,12 @@ html {
         width: inherit;
       }
 
+      box-shadow: $box-shadow;
       border: 2px solid silver;
       background-color: white;
-      padding: 1.8rem;
+      padding: .5rem;
       color: $secondary;
-      position: fixed;
+      position: absolute;
       height: 300px;
       height: inherit;
       display:block;
@@ -221,14 +255,79 @@ html {
 
 
 .quick {
+
+  .section {
+    &.section1 {
+      padding: 0;
+
+      .title {
+        position: absolute;
+        top: 40%;
+        font-size: 3rem;
+      }
+
+      color: #ffffff;
+      text-shadow: 1px 1px #787878;
+
+      img {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        box-sizing: border-box;
+        // -webkit-filter: blur(5px) grayscale(30%);
+        // filter: blur(5px) grayscale(30%);
+        opacity: .9;
+
+        // background-color: $crcolor;
+      }
+    }
+  }
+
+  .modal{
+    .modal-dialog{
+      .modal-content{
+        .modal-header{
+          .modal-title{
+            width: 100%;
+            text-align:center;
+            color: $crquick;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  .owl-item {
+    .item {
+      border: 1px solid $secondary;
+      border-radius: 5px;
+      padding: .7rem .5rem;
+      cursor: pointer;
+      font-size: .9rem;
+      color: $secondary;
+      min-height: 100px;
+      text-align: center;
+
+      &:hover {
+        font-weight: bold;
+        color: $crquick;
+      }
+    }
+
+  }
+
   .btn {
     &.tech {
-      width: 200px;
-      height: 200px;
-      font-size:1.1rem;
-      padding: .3rem;
-      border-radius: 100%;
-      box-shadow: $box-shadow;
+      min-width: 250px;
+      // width: 200px;
+      // height: 200px;
+      // font-size:1.1rem;
+      // padding: .3rem;
+      // border-radius: 100%;
+      // box-shadow: $box-shadow;
       &:hover{
 
       }

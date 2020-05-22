@@ -182,10 +182,13 @@ html {
 
   .card {
     cursor: pointer;
+    // transition: width 1s;
+    // -webkit-transition: width 1s;
 
     .card-body {
       .card-title {
         &.name {
+
           font-weight: bold;
           text-align: center;
         }
@@ -205,7 +208,7 @@ html {
           .role {
             display: block;
             color: $crcolor;
-            font-weight: block;
+            font-weight: bold;
             margin-bottom: .3rem;
           }
 
@@ -219,12 +222,14 @@ html {
     &:hover {
       background-color: $primary;
       color: white;
-      font-weight: bold;
+      // font-weight: bold;
       z-index: 10;
     }
-
+    &:hover .card-title.name{
+      text-align: left;
+    }
     &:hover .card-text.description {
-      margin-top: -2.5rem;
+      margin-top: -2.3rem;
       // margin-left: -1.3rem;
       font-size: .8rem;
       min-height: 150px;
@@ -233,6 +238,7 @@ html {
 
       @media (max-width: 990px) {
         width: 100%;
+        margin-left: -1.3rem;
       }
 
       @media (min-width: 990px) {

@@ -19,6 +19,7 @@ module.exports = {
       './framework/bootstrap-4.4.1/scss/bootstrap.scss'
     ],
     index: './src/js/index.js',
+    quick: './src/js/quick.js',
     // multiple : './src/js/multiple.js'
     // boolma: ['./framework/bulma-0.8.0/bulma.sass']
   },
@@ -57,14 +58,14 @@ module.exports = {
       title: '코드레시피-웹팩',
       hash: true,
       filename: 'index.html',
-      excludeChunks: [''], // entry에서 해당 리스트를 제외한 나머지
+      excludeChunks: ['quick'], // entry에서 해당 리스트를 제외한 나머지
       template: 'index.html'
     }),
     new HtmlWebpackPlugin({
       title: '코드레시피-웹팩',
       hash: true,
       filename: 'quick.html',
-      excludeChunks: [''], // entry에서 해당 리스트를 제외한 나머지
+      excludeChunks: ['index'], // entry에서 해당 리스트를 제외한 나머지
       template: 'quick.html'
     }),
     new HtmlWebpackPlugin({

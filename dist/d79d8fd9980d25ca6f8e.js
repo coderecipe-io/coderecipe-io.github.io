@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -97,7 +97,7 @@
 
 /***/ }),
 
-/***/ 1:
+/***/ 0:
 /*!*************************************************************!*\
   !*** multi ./framework/bootstrap-4.4.1/scss/bootstrap.scss ***!
   \*************************************************************/
@@ -110,4 +110,4 @@ module.exports = __webpack_require__(/*! ./framework/bootstrap-4.4.1/scss/bootst
 /***/ })
 
 /******/ });
-//# sourceMappingURL=style.js.map
+//# sourceMappingURL=d79d8fd9980d25ca6f8e.js.map

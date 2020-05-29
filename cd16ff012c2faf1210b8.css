@@ -7563,10 +7563,7 @@ html body {
     .main .row.section.section3 .col-md-4 {
       border-left: 15px solid #2667b2; } }
   .main .row.section.section3 .col-md-8 {
-    color: #6c757d; }
-    .main .row.section.section3 .col-md-8:hover {
-      font-weight: bold;
-      color: #343a40; }
+    color: #343a40; }
 
 .member .section1 {
   min-height: 150px;
@@ -7679,6 +7676,23 @@ html body {
     font-weight: bold;
     color: #844EBE; }
 
+.quick .owl-nav {
+  margin-top: 0px; }
+  .quick .owl-nav .owl-prev {
+    font-size: 3rem !important;
+    width: 70px; }
+    .quick .owl-nav .owl-prev:hover {
+      color: #343a40;
+      background: none;
+      border: none; }
+  .quick .owl-nav .owl-next {
+    width: 70px;
+    font-size: 3rem !important; }
+    .quick .owl-nav .owl-next:hover {
+      color: #343a40;
+      background: none;
+      border: none; }
+
 .quick .btn.tech {
   min-width: 250px; }
 
@@ -7696,5 +7710,13 @@ html body {
   width: 80%;
   margin-top: -2rem; }
 
+footer {
+  line-height: 2rem; }
+  footer .title {
+    font-size: 1.4rem; }
+  footer .subtitle {
+    line-height: 2.5rem;
+    font-size: 1.2rem; }
 
-/*# sourceMappingURL=07493e41f3a4948a5014.css.map*/
+
+/*# sourceMappingURL=cd16ff012c2faf1210b8.css.map*/

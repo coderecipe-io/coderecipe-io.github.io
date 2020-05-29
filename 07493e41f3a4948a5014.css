@@ -7498,6 +7498,9 @@ html body {
     padding: 1rem 0 2.5rem 0;
     font-weight: bold; }
 
+.main .row .svg {
+  max-width: 200px; }
+
 .main .row.section {
   min-height: 400px;
   overflow: hidden;
@@ -7522,33 +7525,48 @@ html body {
       border-left: 4px solid #2667b2 !important; }
     .main .row.section .border.right {
       border-right: 4px solid #2667b2 !important; }
-
-.main .row.section1 {
-  padding: 0;
-  color: #ffffff;
-  text-shadow: 1px 1px #787878; }
-  .main .row.section1 .title {
-    position: absolute;
-    top: 40%;
-    font-size: 3rem; }
-  .main .row.section1 img {
+  .main .row.section.section1 {
+    padding: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px #787878; }
+    .main .row.section.section1 .title {
+      position: absolute;
+      top: 40%;
+      font-size: 3rem; }
+    .main .row.section.section1 img {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      box-sizing: border-box;
+      -webkit-filter: blur(5px) grayscale(30%);
+      filter: blur(5px) grayscale(30%);
+      opacity: .9; }
+  @media (max-width: 990px) {
+    .main .row.section.section2 .col-md-8 {
+      text-align: center; } }
+  @media (min-width: 990px) {
+    .main .row.section.section2 .col-md-8 {
+      text-align: left; } }
+  .main .row.section.section2 img {
+    padding-top: 2rem;
     position: absolute;
     display: block;
     width: 100%;
-    height: 100%;
     object-fit: cover;
-    box-sizing: border-box;
-    -webkit-filter: blur(5px) grayscale(30%);
-    filter: blur(5px) grayscale(30%);
-    opacity: .9; }
-
-.main .row.section2 img {
-  padding-top: 2rem;
-  position: absolute;
-  display: block;
-  width: 100%;
-  object-fit: cover;
-  box-sizing: border-box; }
+    box-sizing: border-box; }
+  @media (max-width: 990px) {
+    .main .row.section.section3 .col-md-4 {
+      border: none; } }
+  @media (min-width: 990px) {
+    .main .row.section.section3 .col-md-4 {
+      border-left: 15px solid #2667b2; } }
+  .main .row.section.section3 .col-md-8 {
+    color: #6c757d; }
+    .main .row.section.section3 .col-md-8:hover {
+      font-weight: bold;
+      color: #343a40; }
 
 .member .section1 {
   min-height: 150px;
@@ -7625,6 +7643,7 @@ html body {
 
 .quick .section.section1 {
   padding: 0;
+  background-color: #844EBE;
   color: #ffffff;
   text-shadow: 1px 1px #787878; }
   .quick .section.section1 .title {
@@ -7637,6 +7656,7 @@ html body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center center;
     box-sizing: border-box;
     opacity: .9; }
 
@@ -7677,4 +7697,4 @@ html body {
   margin-top: -2rem; }
 
 
-/*# sourceMappingURL=7f29c73d2c951489534f.css.map*/
+/*# sourceMappingURL=07493e41f3a4948a5014.css.map*/

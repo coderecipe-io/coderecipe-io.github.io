@@ -81,56 +81,33 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/quick.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./images/quick-main2.png":
-/*!********************************!*\
-  !*** ./images/quick-main2.png ***!
-  \********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "9fe2fc2f1def6a037b341b88a60a8a45.png");
-
-/***/ }),
-
-/***/ "./src/js/common.js":
-/*!**************************!*\
-  !*** ./src/js/common.js ***!
-  \**************************/
+/***/ "./framework/bootstrap-4.4.1/scss/bootstrap.scss":
+/*!*******************************************************!*\
+  !*** ./framework/bootstrap-4.4.1/scss/bootstrap.scss ***!
+  \*******************************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-exports.init = function () {
-  // 다른 js파일에서 require로 사용할 함수
-  return 'common.js init()!!';
-};
+// extracted by mini-css-extract-plugin
 
 /***/ }),
 
-/***/ "./src/js/quick.js":
-/*!*************************!*\
-  !*** ./src/js/quick.js ***!
-  \*************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ 0:
+/*!*************************************************************!*\
+  !*** multi ./framework/bootstrap-4.4.1/scss/bootstrap.scss ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _images_quick_main2_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../images/quick-main2.png */ "./images/quick-main2.png");
-var common = __webpack_require__(/*! ./common.js */ "./src/js/common.js");
+module.exports = __webpack_require__(/*! ./framework/bootstrap-4.4.1/scss/bootstrap.scss */"./framework/bootstrap-4.4.1/scss/bootstrap.scss");
 
-
-document.querySelector('.quick-main').src = _images_quick_main2_png__WEBPACK_IMPORTED_MODULE_0__["default"];
-console.log(common.init());
-console.log('index.js');
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=bf92dce256042e6e263a.js.map
+//# sourceMappingURL=07493e41f3a4948a5014.js.map

@@ -7,15 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../../dist/css/style.css">
+    <!-- <link rel="stylesheet" href="../../dist/css/style.css"> -->
+    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=7f15a78ded96c78ffdf3f96a1b704cac"></script>
+    <script>
+        var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        var options = { //지도를 생성할 때 필요한 기본 옵션
+            center: new kakao.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표.
+            level: 3 //지도의 레벨(확대, 축소 정도)
+        };
 
+        var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+    </script>
     <title>퀵서비스솔루션 - 코드레시피</title>
 </head>
 
 <body>
     <div class="row">
         <div class="col">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="#"><img src="images/logo.png" class="img-fluid"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,9 +41,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="member.html">구성원</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="contact.html">문의하기</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </nav>
@@ -48,6 +57,8 @@
                         1. 우리는 요리하듯 개발합니다.<br>
                         2. 우리는 모듈에 대한 개인의 저작권을 인정합니다.<br>
                         3. 금융과 물류. 두가지 분야만 다룹니다.<br>
+
+                        <div id="map" style="width:500px;height:400px;"></div>
 
                     </div>
                 </div>
@@ -74,23 +85,15 @@
     </div>
 </div> -->
 
-    <footer class="row bg-crcolor text-white">
-        <div class="col p-5">
-            <div class="container">
-
-
-
-
-                +82 10 2534 9557
-                jack.kor@dbad.kr
-                Directing Bridges Arranged by Demand
-
-                <button class="btn btn-crcolor"> Test </button>
-                <button class="btn btn-crquick"> Test </button>
-                <button class="btn btn-crpay"> Test </button>
-            </div>
+<footer class="row bg-dark text-white">
+    <div class="col p-3">
+        <div class="container text-right">
+            (주) 코드레시피
         </div>
-    </footer>
+    </div>
+</footer>
+
+
 
 
 

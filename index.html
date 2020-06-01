@@ -10,7 +10,7 @@
     <!-- <link rel="stylesheet" href="/dist/css/style.css"> -->
 
     <title>회사소개-코드레시피</title>
-<link href="cd16ff012c2faf1210b8.css?5d85e8483cf5facc8724" rel="stylesheet"></head>
+<link href="cd16ff012c2faf1210b8.css?afccd4bb411ca490eb04" rel="stylesheet"></head>
 
 <body class="main">
 
@@ -265,6 +265,34 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
-<script src="cd16ff012c2faf1210b8.js?5d85e8483cf5facc8724"></script><script src="747ed5f0034a0259805a.js?5d85e8483cf5facc8724"></script></body>
+    <!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v7.0'
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/ko_KR/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="105561481079734"
+theme_color="#2667b2"
+logged_in_greeting="안녕하세요. 코드레시피입니다."
+logged_out_greeting="안녕하세요. 코드레시피입니다.">
+</div>
+<script src="cd16ff012c2faf1210b8.js?afccd4bb411ca490eb04"></script><script src="747ed5f0034a0259805a.js?afccd4bb411ca490eb04"></script></body>
+
+
 
 </html>

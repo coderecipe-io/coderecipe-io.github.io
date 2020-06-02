@@ -214,7 +214,6 @@ html {
 
 .member {
 
-
   .section1 {
     min-height: 150px;
 
@@ -296,41 +295,54 @@ html {
     }
 
     &:hover {
-      background-color: $primary;
-      color: white;
-      // font-weight: bold;
-      z-index: 10;
-    }
-    &:hover .card-title.name{
-      text-align: left;
-    }
-    &:hover .card-text.description {
-      margin-top: -3rem;
-      // margin-left: -1.3rem;
-      font-size: .8rem;
-      min-height: 150px;
-      line-height: 1.6;
-      min-width: 400px;
-
       @media (max-width: 990px) {
-        width: 100%;
-        margin-left: -1.3rem;
       }
 
       @media (min-width: 990px) {
-        // width: calc(100vw / 3);
-        width: inherit;
+        background-color: $primary;
+        color: white;
+        // font-weight: bold;
+        z-index: 10;
+      }
+    
+    }
+    &:hover .card-title.name{
+      @media (max-width: 990px) {
       }
 
-      box-shadow: $box-shadow;
-      border: 2px solid silver;
-      background-color: white;
-      padding: .5rem .7rem;
-      color: $secondary;
-      position: absolute;
-      height: 300px;
-      height: inherit;
-      display:block;
+      @media (min-width: 990px) {
+        text-align: left;
+      }
+    }
+    &:hover .card-text.description {
+      @media (max-width: 990px) {
+        .role{
+          display:none;
+        }
+        display:block;
+        color: $secondary;
+        font-size: .8rem;
+      }
+
+      @media (min-width: 990px) {
+        margin-top: -3rem;
+        // margin-left: -1.3rem;
+        font-size: .8rem;
+        min-height: 150px;
+        line-height: 1.6;
+        min-width: 400px;
+        width: inherit;
+        box-shadow: $box-shadow;
+        border: 2px solid silver;
+        background-color: white;
+        padding: .5rem .7rem;
+        color: $secondary;
+        position: absolute;
+        height: 300px;
+        height: inherit;
+        display:block;
+      }
+     
     }
   }
 }
@@ -429,7 +441,7 @@ html {
 
   .btn {
     &.tech {
-      min-width: 250px;
+      min-width: 280px;
       // width: 200px;
       // height: 200px;
       // font-size:1.1rem;
@@ -456,8 +468,14 @@ html {
 .navbar-collapse {
 
   position: absolute;
-  right: 20px;
+  
+  @media (max-width: 990px) {
+    right: 0px;
+  }
 
+  @media (min-width: 990px) {
+    right: 20px;
+  }
   &.collapse {
     &.show {
       position: relative !important;
@@ -466,6 +484,9 @@ html {
       .nav-link {
         text-align: center;
         padding: 2rem 0;
+        &:hover{
+          font-weight: bold;
+        }
       }
     }
   }

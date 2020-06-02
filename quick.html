@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta name="naver-site-verification" content="244781b611039b5d65e53f9ad981e938d9f512e6" />
     <!-- Bootstrap CSS -->
     <!-- <link rel="stylesheet" href="../../dist/css/style.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -14,7 +14,7 @@
         integrity="sha256-nXBV7Gr2lU0t+AwKsnS05DYtzZ81oYTXS6kj7LBQHfM=" crossorigin="anonymous" />
 
 
-    <title>퀵서비스솔루션 - 코드레시피</title>
+        <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 
 <body class="quick">
@@ -464,6 +464,33 @@
             }
         })
     </script>
+
+    <!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v7.0'
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/ko_KR/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="105561481079734"
+theme_color="#2667b2"
+logged_in_greeting="안녕하세요. 코드레시피입니다."
+logged_out_greeting="안녕하세요. 코드레시피입니다.">
+</div>
 </body>
 
 </html>

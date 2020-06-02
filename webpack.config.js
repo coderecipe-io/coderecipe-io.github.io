@@ -5,6 +5,7 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // https://github.com/jantimon/html-webpack-plugin
 const ExtractTextPlugin = require('extract-text-webpack-plugin'); // https://webpack.js.org/plugins/extract-text-webpack-plugin/
+const CopyWebpackPlugin = require('copy-webpack-plugin');  // 파일 복사
 
 // const { CleanWebpackPlugin } = require('clean-webpack-plugin'); // dist git 관리를 위해 제거 
 
@@ -39,6 +40,7 @@ module.exports = {
     // chunkFilename: '[chunkhash].js'
   },
   plugins: [
+
     // new CleanWebpackPlugin(),
     // 컴파일 + 번들링 CSS 파일이 저장될 경로와 이름 지정
     //new MiniCssExtractPlugin({ filename: 'css/style.css' }),
@@ -113,7 +115,19 @@ module.exports = {
         use: [{
           loader: 'file-loader'
         }]
-      }
+      },
+      // {
+      //   test: /\.(png|xml|json|ico)$/i,
+      //   /* Exclude fonts while working with images, e.g. .svg can be both image or font. */
+      //   include: path.resolve(__dirname, 'favicon'),
+      //   use: [{
+      //     loader: 'file-loader',
+      //     options: {
+      //       name: '[name].[ext]',
+      //       outputPath: 'dist/favicon/'
+      //     }
+      //   }]
+      // },
     ]
   },
   devtool: 'source-map',

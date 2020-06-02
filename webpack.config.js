@@ -55,21 +55,21 @@ module.exports = {
       // chunkFilename: '[chunkhash].css'
     }),
     new HtmlWebpackPlugin({
-      title: '코드레시피-웹팩',
+      title: '회사소개-코드레시피',
       hash: true,
       filename: 'index.html',
       excludeChunks: ['quick'], // entry에서 해당 리스트를 제외한 나머지
       template: 'index.html'
     }),
     new HtmlWebpackPlugin({
-      title: '코드레시피-웹팩',
+      title: '퀵서비스솔루션-코드레시피',
       hash: true,
       filename: 'quick.html',
       excludeChunks: ['index'], // entry에서 해당 리스트를 제외한 나머지
       template: 'quick.html'
     }),
     new HtmlWebpackPlugin({
-      title: '코드레시피-웹팩',
+      title: '구성원-코드레시피',
       hash: true,
       filename: 'member.html',
       excludeChunks: [''], // entry에서 해당 리스트를 제외한 나머지

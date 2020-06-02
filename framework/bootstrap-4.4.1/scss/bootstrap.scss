@@ -88,6 +88,10 @@ html {
   //   max-width: 720px;
   // }
   .row {
+
+    .svg{
+      max-width: 200px;
+    }
     &.section {
       min-height: 400px;
       //max-height: 500px;
@@ -128,57 +132,87 @@ html {
           border-right: 4px solid $crcolor !important;
         }
       }
+      &.section1 {
+        padding: 0;
+  
+        .title {
+          position: absolute;
+          top: 40%;
+          font-size: 3rem;
+        }
+  
+        color: #ffffff;
+        text-shadow: 1px 1px #787878;
+  
+        img {
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          box-sizing: border-box;
+          -webkit-filter: blur(5px) grayscale(30%);
+          filter: blur(5px) grayscale(30%);
+          opacity: .9;
+  
+          // background-color: $crcolor;
+        }
+      }
+      &.section2{
+        // font-size: 1.1rem;
+        .col-md-8{
+          @media (max-width: 990px) {
+            text-align:center;
+          }
+  
+          @media (min-width: 990px) {
+            text-align:left;
+          }
+        }
+       
 
+        img {
+          padding-top: 2rem;
+          position: absolute;
+          display: block;
+          // width: 50px;
+  
+          // height: 100%;
+          width: 100%;
+          object-fit: cover;
+          box-sizing: border-box;
+        }
+      }
+
+      &.section3{
+        .col-md-4{
+          
+          @media (max-width: 990px) {
+            border: none;
+          }
+
+          @media (min-width: 990px) {
+            border-left: 15px solid $crcolor;
+          }
+        }
+        .col-md-8{
+          color: $dark;
+
+          // &:hover{
+          //   font-weight:bold;
+          //   color: $dark;
+          // }
+        }
+      }
     }
 
 
 
-    &.section1 {
-      padding: 0;
-
-      .title {
-        position: absolute;
-        top: 40%;
-        font-size: 3rem;
-      }
-
-      color: #ffffff;
-      text-shadow: 1px 1px #787878;
-
-      img {
-        position: absolute;
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        box-sizing: border-box;
-        -webkit-filter: blur(5px) grayscale(30%);
-        filter: blur(5px) grayscale(30%);
-        opacity: .9;
-
-        // background-color: $crcolor;
-      }
-    }
-    &.section2{
-      // font-size: 1.1rem;
-
-      img {
-        padding-top: 2rem;
-        position: absolute;
-        display: block;
-        // width: 50px;
-
-        // height: 100%;
-        width: 100%;
-        object-fit: cover;
-        box-sizing: border-box;
-      }
-    }
+   
   }
 }
 
 .member {
-
 
   .section1 {
     min-height: 150px;
@@ -261,41 +295,54 @@ html {
     }
 
     &:hover {
-      background-color: $primary;
-      color: white;
-      // font-weight: bold;
-      z-index: 10;
-    }
-    &:hover .card-title.name{
-      text-align: left;
-    }
-    &:hover .card-text.description {
-      margin-top: -3rem;
-      // margin-left: -1.3rem;
-      font-size: .8rem;
-      min-height: 150px;
-      line-height: 1.6;
-      min-width: 400px;
-
       @media (max-width: 990px) {
-        width: 100%;
-        margin-left: -1.3rem;
       }
 
       @media (min-width: 990px) {
-        // width: calc(100vw / 3);
-        width: inherit;
+        background-color: $primary;
+        color: white;
+        // font-weight: bold;
+        z-index: 10;
+      }
+    
+    }
+    &:hover .card-title.name{
+      @media (max-width: 990px) {
       }
 
-      box-shadow: $box-shadow;
-      border: 2px solid silver;
-      background-color: white;
-      padding: .5rem .7rem;
-      color: $secondary;
-      position: absolute;
-      height: 300px;
-      height: inherit;
-      display:block;
+      @media (min-width: 990px) {
+        text-align: left;
+      }
+    }
+    &:hover .card-text.description {
+      @media (max-width: 990px) {
+        .role{
+          display:none;
+        }
+        display:block;
+        color: $secondary;
+        font-size: .8rem;
+      }
+
+      @media (min-width: 990px) {
+        margin-top: -3rem;
+        // margin-left: -1.3rem;
+        font-size: .8rem;
+        min-height: 150px;
+        line-height: 1.6;
+        min-width: 400px;
+        width: inherit;
+        box-shadow: $box-shadow;
+        border: 2px solid silver;
+        background-color: white;
+        padding: .5rem .7rem;
+        color: $secondary;
+        position: absolute;
+        height: 300px;
+        height: inherit;
+        display:block;
+      }
+     
     }
   }
 }
@@ -306,6 +353,7 @@ html {
   .section {
     &.section1 {
       padding: 0;
+      background-color: $crquick;
 
       .title {
         position: absolute;
@@ -319,9 +367,12 @@ html {
       img {
         position: absolute;
         display: block;
+        // max-width: 50%;
+        // left: 22%;
         width: 100%;
         height: 100%;
         object-fit: cover;
+        object-position: center center;
         box-sizing: border-box;
         // -webkit-filter: blur(5px) grayscale(30%);
         // filter: blur(5px) grayscale(30%);
@@ -366,9 +417,31 @@ html {
 
   }
 
+  .owl-nav{
+    margin-top: 0px;
+    .owl-prev{
+      font-size: 3rem !important;
+      width: 70px;
+      &:hover{
+        color :$dark;
+        background:none;
+        border: none;
+      }
+    }
+    .owl-next{
+      width: 70px;
+      font-size: 3rem !important;
+      &:hover{
+        color :$dark;
+        background:none;
+        border: none;
+      }
+    }
+  }
+
   .btn {
     &.tech {
-      min-width: 250px;
+      min-width: 280px;
       // width: 200px;
       // height: 200px;
       // font-size:1.1rem;
@@ -395,8 +468,14 @@ html {
 .navbar-collapse {
 
   position: absolute;
-  right: 20px;
+  
+  @media (max-width: 990px) {
+    right: 0px;
+  }
 
+  @media (min-width: 990px) {
+    right: 20px;
+  }
   &.collapse {
     &.show {
       position: relative !important;
@@ -405,6 +484,9 @@ html {
       .nav-link {
         text-align: center;
         padding: 2rem 0;
+        &:hover{
+          font-weight: bold;
+        }
       }
     }
   }
@@ -418,4 +500,17 @@ html {
   border: 1px solid $crcolor;
   width: 80%;
   margin-top: -2rem;
+}
+
+
+footer{
+  line-height: 2rem;
+  .title{
+    font-size: 1.4rem;
+    
+  }
+  .subtitle{
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+  }
 }

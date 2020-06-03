@@ -4,8 +4,8 @@
   "description": "css_core",
   "main": "index.js",
   "scripts": {
-    "watch": "webpack -w && cp -R favicon dist/ && echo ok",
-    "build": "webpack && cp -R favicon dist/ && echo ok"
+    "watch": "webpack -w && cp -R favicon dist/ && cp -R images dist/ && echo ok",
+    "build": "webpack && cp -R favicon dist/ && cp -R images dist/ && echo ok"
   },
   "repository": {
     "type": "git",

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <!-- Required meta tags -->
@@ -8,25 +8,26 @@
     <meta name="naver-site-verification" content="244781b611039b5d65e53f9ad981e938d9f512e6" />
     <!-- Bootstrap CSS -->
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-<link rel="manifest" href="favicon/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
-    <title>퀵서비스솔루션 - 코드레시피</title>
-    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=7f15a78ded96c78ffdf3f96a1b704cac"></script>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=7f15a78ded96c78ffdf3f96a1b704cac">
+    </script>
     <script>
         var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
         var options = { //지도를 생성할 때 필요한 기본 옵션
@@ -103,30 +104,30 @@
     </div>
 </div> -->
 
-<footer class="row bg-dark text-white">
-    <div class="col">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <span class="d-block title">Coderecipe, Inc.</span>
-                    <span class="d-block subtitle">코드레시피(주)</span>
-                    
-                </div>
-                <div class="col-md-5">
-                    <span class="d-block">대표 : 고승일</span>
-                    <span class="d-block">사업자등록번호 : 640-88-01673</span>
-                    <span class="d-block">서울특별시 금천구 시흥대로101길 38 삼덕빌딩 3층</span>
-                    <span class="d-block">commonuse@coderecipe.io</span>
-                </div>
-                <div class="col-md-4 text-right">
-                    <a class="btn btn-crcolor" href="mailto:commonuse@coderecipe.io">문의</a>
-                    <a class="btn btn-crcolor" href="https://linktr.ee/coderecipe">채용</a>
-                </div>
-            </div>
+    <footer class="row bg-dark text-white">
+        <div class="col">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <span class="d-block title">Coderecipe, Inc.</span>
+                        <span class="d-block subtitle">코드레시피(주)</span>
 
+                    </div>
+                    <div class="col-md-5">
+                        <span class="d-block">대표 : 고승일</span>
+                        <span class="d-block">사업자등록번호 : 640-88-01673</span>
+                        <span class="d-block">서울특별시 금천구 시흥대로101길 38 삼덕빌딩 3층</span>
+                        <span class="d-block">commonuse@coderecipe.io</span>
+                    </div>
+                    <div class="col-md-4 text-right">
+                        <a class="btn btn-crcolor" href="mailto:commonuse@coderecipe.io">문의</a>
+                        <a class="btn btn-crcolor" href="https://linktr.ee/coderecipe">채용</a>
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
 
 

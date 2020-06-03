@@ -35,7 +35,8 @@ module.exports = {
     // filename: '[name].[chunkhash].js',
     // sourceMapFilename: '[name].[chunkhash].map',
     // chunkFilename: '[id].[chunkhash].js'
-    filename: '[chunkhash].js',
+    // filename: '[chunkhash].js',
+    filename: '[name].js',
     // sourceMapFilename: '[chunkhash].map',
     // chunkFilename: '[chunkhash].js'
   },
@@ -49,10 +50,11 @@ module.exports = {
       // chunkFilename: 'css/[id].css',
       // filename: '[name].css',
       path: path.resolve(__dirname, 'dist'),
+      filename: '[name].css',
       // filename: '[name].[chunkhash].css',
       // sourceMapFilename: '[name].[chunkhash].map',
       // chunkFilename: '[id].[chunkhash].css'
-      filename: '[chunkhash].css',
+      // filename: '[chunkhash].css',
       // sourceMapFilename: '[chunkhash].map',
       // chunkFilename: '[chunkhash].css'
     }),
